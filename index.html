@@ -19,7 +19,8 @@
         </td>
     </tr>
     </table> 
-	 
+	 <audio id="myaudio"   src="./audio/wave.mp3"  controls autoplay loop >
+</audio>
 
 </body>
 <script>
@@ -43,13 +44,14 @@ var cur = 0;
 document.getElementById('myimage').style.backgroundImage = "url('"+images[cur]+"')"; 
 document.getElementById('myimage').style.backgroundSize = "400px 500px"; 
 var myAudio = new Audio('audio/wave.mp3'); 
-myAudio.addEventListener('ended', function() {
-    this.currentTime = 0;
+
+function nextImage(){
+ 
 	cur = (cur+1) % images.length;
 	document.getElementById('myimage').style.backgroundImage = "url('"+images[cur]+"')"; 
-    this.play();
-}, false);
-myAudio.play();
+	 setTimeout(function(){ nextImage() }, 5000);
+}
  
+ setTimeout(function(){ nextImage() }, 5000);
 </script>
 </html>

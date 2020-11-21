@@ -1,0 +1,53 @@
+BODY
+{
+    FONT-SIZE: 1pt;
+    COLOR: navy;
+    FONT-FAMILY: Verdana;
+    BACKGROUND-COLOR: blue
+}
+A
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #FFFFFF;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: none
+}
+.l
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #ffffff;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #ffaf0d;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: underline
+}
+LI
+{
+    FONT-SIZE: 11px;
+    COLOR: navy;
+    FONT-FAMILY: Verdana
+}
+.cellbg
+{
+    BACKGROUND-COLOR: #fff9f2;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 10pt;
+    TEXT-ALIGN:Justify;
+ }
+ .cellbg1
+{
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 10pt;
+    TEXT-ALIGN:Justify;
+    color:#800000;
+    FONT-WEIGHT: bold;
+    
+ }

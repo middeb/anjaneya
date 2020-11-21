@@ -1,0 +1,55 @@
+<html>
+<link href="./anjaneya.css" rel="stylesheet" type="text/css">
+
+<script></script>
+
+<body>
+   <table align="center">
+    <tr>
+      
+        <td width="100%" style="padding:20px;vertical-align:top;align:center;100%">
+          <p align="center">
+        <font size="4" color="#FF0000"> <b style="font-size:small">
+		<span id="CurrentTitle" style="font-size:large;Color:white; background-image:">Sri Rama Jaya Rama Jaya Jaya Rama !!! </span></b></font></p>
+
+            <div style="border:1px solid white;width:400px;height:500px;background-image:" id="myimage">
+            
+            </div>
+            
+        </td>
+    </tr>
+    </table> 
+	 
+
+</body>
+<script>
+var images = [
+"slides/p_0001.jpg",
+"slides/p_0002.jpg",
+"slides/p_0003.jpg",
+"slides/p_0004.jpg",
+"slides/p_0005.jpg",
+"slides/p_0006.jpg",
+"slides/p_0007.jpg",
+"slides/p_0008.jpg",
+"slides/p_0009.jpg",
+"slides/p_0010.jpg",
+"slides/p_0011.jpg",
+"slides/p_0012.jpg",
+"slides/p_0013.jpg",
+"slides/pushpangi-full.jpg"];
+
+var cur = 0;
+document.getElementById('myimage').style.backgroundImage = "url('"+images[cur]+"')"; 
+document.getElementById('myimage').style.backgroundSize = "400px 500px"; 
+var myAudio = new Audio('audio/wave.mp3'); 
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+	cur = (cur+1) % images.length;
+	document.getElementById('myimage').style.backgroundImage = "url('"+images[cur]+"')"; 
+    this.play();
+}, false);
+myAudio.play();
+ 
+</script>
+</html>
